@@ -57,7 +57,7 @@ import h5py # for reading our dataset
 import ipywidgets as widgets
 from ipywidgets import interact, interactive, fixed
 
-get_ipython().magic(u'matplotlib inline')
+#get_ipython().magic(u'matplotlib inline')
 
 
 # ## Parameters 
