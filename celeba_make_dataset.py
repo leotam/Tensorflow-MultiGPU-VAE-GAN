@@ -30,7 +30,7 @@ import tqdm
 
 # In[3]:
 
-data = glob(os.path.join("img_align_celeba", "*.jpg"))
+data = glob(os.path.join("celebA", "*.jpg"))
 
 
 # In[4]:
@@ -78,12 +78,12 @@ test = get_image(data[0],dim,dim)
 
 # In[10]:
 
-cm = plt.cm.hot
-fig, ax = plt.subplots(nrows=1,ncols=4, figsize=(20,8))
-ax[0].imshow(np.reshape(test, (dim,dim,3)), interpolation='nearest')
-ax[1].imshow(np.reshape(test, (dim,dim,3))[:,:,0], interpolation='nearest', cmap=cm)
-ax[2].imshow(np.reshape(test, (dim,dim,3))[:,:,1], interpolation='nearest', cmap=cm)
-ax[3].imshow(np.reshape(test, (dim,dim,3))[:,:,2], interpolation='nearest', cmap=cm)
+#cm = plt.cm.hot
+#fig, ax = plt.subplots(nrows=1,ncols=4, figsize=(20,8))
+#ax[0].imshow(np.reshape(test, (dim,dim,3)), interpolation='nearest')
+#ax[1].imshow(np.reshape(test, (dim,dim,3))[:,:,0], interpolation='nearest', cmap=cm)
+#ax[2].imshow(np.reshape(test, (dim,dim,3))[:,:,1], interpolation='nearest', cmap=cm)
+#ax[3].imshow(np.reshape(test, (dim,dim,3))[:,:,2], interpolation='nearest', cmap=cm)
 
 
 # In[11]:
@@ -105,12 +105,12 @@ for i in tqdm.tqdm(range(len(data))):
 
 test = images[i].reshape(dim,dim,3)
 #test = image.flatten()
-cm = plt.cm.hot
-fig, ax = plt.subplots(nrows=1,ncols=4, figsize=(20,8))
-ax[0].imshow(np.reshape(test, (dim,dim,3)), interpolation='nearest')
-ax[1].imshow(np.reshape(test, (dim,dim,3))[:,:,0], interpolation='nearest', cmap=cm)
-ax[2].imshow(np.reshape(test, (dim,dim,3))[:,:,1], interpolation='nearest', cmap=cm)
-ax[3].imshow(np.reshape(test, (dim,dim,3))[:,:,2], interpolation='nearest', cmap=cm)
+#cm = plt.cm.hot
+#fig, ax = plt.subplots(nrows=1,ncols=4, figsize=(20,8))
+#ax[0].imshow(np.reshape(test, (dim,dim,3)), interpolation='nearest')
+#ax[1].imshow(np.reshape(test, (dim,dim,3))[:,:,0], interpolation='nearest', cmap=cm)
+#ax[2].imshow(np.reshape(test, (dim,dim,3))[:,:,1], interpolation='nearest', cmap=cm)
+#ax[3].imshow(np.reshape(test, (dim,dim,3))[:,:,2], interpolation='nearest', cmap=cm)
 
 
 # In[19]:
@@ -178,11 +178,11 @@ bald_people = faces[labels[:,4]==1][0:4]
 
 # In[28]:
 
-fig, ax = plt.subplots(nrows=1,ncols=4, figsize=(20,8))
-ax[0].imshow(np.reshape(bald_people[0], (dim,dim,3)), interpolation='nearest')
-ax[1].imshow(np.reshape(bald_people[1], (dim,dim,3)), interpolation='nearest', cmap=cm)
-ax[2].imshow(np.reshape(bald_people[2], (dim,dim,3)), interpolation='nearest', cmap=cm)
-ax[3].imshow(np.reshape(bald_people[3], (dim,dim,3)), interpolation='nearest', cmap=cm)
+#fig, ax = plt.subplots(nrows=1,ncols=4, figsize=(20,8))
+#ax[0].imshow(np.reshape(bald_people[0], (dim,dim,3)), interpolation='nearest')
+#ax[1].imshow(np.reshape(bald_people[1], (dim,dim,3)), interpolation='nearest', cmap=cm)
+#ax[2].imshow(np.reshape(bald_people[2], (dim,dim,3)), interpolation='nearest', cmap=cm)
+#ax[3].imshow(np.reshape(bald_people[3], (dim,dim,3)), interpolation='nearest', cmap=cm)
 
 
 # In[ ]:
